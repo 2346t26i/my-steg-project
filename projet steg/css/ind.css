@@ -1,0 +1,58 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body, h1, ul, li, a, p {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilisation de la hauteur minimale de la fenêtre visible */
+}
+
+
+/* Style du titre principal */
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Style de la liste des acteurs */
+ul {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style des éléments de la liste */
+li {
+    margin: 10px;
+}
+
+/* Style des liens dans la liste */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Style des liens au survol */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}

@@ -1,0 +1,133 @@
+<style> 
+
+    /* Réinitialiser les styles par défaut du navigateur */
+    body, h1, ul, li, p, a {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Style du corps de la page */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Utilisation de la hauteur minimale de la fenêtre visible */
+    }
+
+    /* Style de l'en-tête */ 
+    /* Style pour le logo dans le header */
+header img {
+    width: 100px; /* Ajustez la largeur du logo selon vos besoins */
+    height: auto; /* Pour conserver les proportions de l'image */
+    position: absolute; /* Position absolue pour permettre le positionnement */
+    top: 10px; /* Marge supérieure */
+    left: 10px; /* Marge gauche */
+}
+
+/* Style du titre de l'en-tête */
+header h1 {
+    font-size: 24px;
+    margin-left: 120px; /* Pour créer de l'espace à droite du logo */
+}
+
+/* Style pour le bouton de déconnexion dans le header */
+header a {
+    background-color: #ff0000; /* Couleur d'arrière-plan du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    padding: 5px 10px; /* Rembourrage du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprimer les soulignements de lien */
+    position: absolute; /* Position absolue pour permettre le positionnement */
+    top: 10px; /* Marge supérieure */
+    right: 10px; /* Marge droite */
+}
+
+/* Le reste de votre CSS pour le reste de la page */
+
+    header {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin: 0; /* Supprimer la marge en haut du header */
+        position: relative; /* Permet de positionner le bouton de déconnexion */
+    }
+
+    /* Style du titre de l'en-tête */
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Style du bouton de déconnexion dans le header */
+    header a {
+        background-color: #262b30; /* Couleur d'arrière-plan du bouton */
+        color: #fa0c0c; /* Couleur du texte du bouton */
+        padding: 5px 10px; /* Rembourrage du bouton */
+        border-radius: 5px; /* Coins arrondis */
+        text-decoration: none; /* Supprimer les soulignements de lien */
+        position: absolute;
+        top: 30px; /* Marge supérieure */
+        right: 10px; /* Marge droite */
+    }
+
+    /* Style de la barre de navigation */
+    nav ul {
+        background-color: #262b30;
+        list-style-type: none;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0; /* Supprimer la marge en haut de la barre de navigation */
+    }
+
+    /* Style des liens dans la barre de navigation */
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /* Style du contenu principal (y compris le diaporama) */
+    main {
+        flex-grow: 1; /* Permet au contenu de prendre autant de place que nécessaire */
+        padding: 20px;
+    }
+
+    /* Style du pied de page */
+    footer {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Style pour le conteneur du diaporama */
+    .slideshow {
+        width: 100%;
+        height: 100vh; /* Utilise la hauteur de la vue (viewport height) pour remplir l'écran */
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Style pour les images du diaporama */
+    .slideshow img {
+        width: 100%;
+        height: 100%; /* Remplit complètement le conteneur */
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    /* Animation du diaporama */
+    .slideshow img.active {
+        opacity: 1;
+    }
+</style>
+

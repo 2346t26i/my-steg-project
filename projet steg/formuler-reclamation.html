@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Réclamation</title>
+    <link rel="stylesheet" href="css/aff.css">
+</head>
+<body><fieldset>
+    <legend><h1>Formulaire de Réclamation</h1></legend>
+    <form action="formuler_reclamation.php" method="POST">
+        <label for="idpanne">ID de la Panne :</label>
+        <input type="text" id="idpanne" name="idpanne" required><br>
+
+        <label for="nature_panne">Nature de la Panne :</label>
+        <input type="text" id="nature_panne" name="nature_panne" required><br>
+
+        <label for="date_panne">Date de la Panne :</label>
+        <input type="date" id="date_panne" name="date_panne" required><br>
+
+        <label for="num_serie">Numéro de Série :</label>
+        <input type="text" id="num_serie" name="num_serie" required><br>
+
+        <label for="type_materiel">Type de Matériel :</label>
+        <input type="text" id="type_materiel" name="type_materiel" required><br>
+
+        <label for="modele">Modèle :</label>
+        <input type="text" id="modele" name="modele" required><br>
+
+        <label for="description_probleme">Description du Problème :</label>
+        <textarea id="description_probleme" name="description_probleme" rows="4" required></textarea><br>
+
+        <button type="submit" value="envoyer" name="envoyer"> Soummetrre la reclamation </button>
+    </form> 
+    </fieldset>
+</body>
+<footer>
+    <p>&copy; 2023 Société Tunisienne d'Électricité et du gaz</p>
+</footer>
+</html>

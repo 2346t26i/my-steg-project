@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+   <link href="css/style1.css" rel="stylesheet">
+</head>
+<body>
+<div id="container_1">
+    <h1 id="title" > inscription réparateur</h1>
+  
+  </div>
+
+  <div id="container_2">
+    <fieldset>
+    <form id="survey-form"  action="registration_reparateur.php" method="post" >
+      <label id="familyname-label" for="familyname"> Nom </label><br>
+      <input type="text" id="familyname" name="nomR" class="form" placeholder="Enter your family name" required><br>
+
+      <label id="name-label" for="name">Prénom</label>
+      <input type="text" id="name" name="prenomR" class="form" placeholder="Insert your name" required><br>
+
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" name="emailR" class="form" placeholder="Insert your email" required><br>
+      <label id="id-label" for="id">ID</label>
+      <input type="number" id="id" name="idR" class="form" placeholder="Enter your ID" required>
+
+      <label id="password-label" for="password">Password</label>
+      <input type="password" id="password" name="passwordR" class="form" placeholder="Enter your password" required>
+
+
+     
+
+      <input type="submit" id="submit" name="submit" value="Submit">
+    </form>
+</fieldset>
+  </div>
+</body>
+
+<script>
+        function test() {
+            var email = connexion.email.value;
+            var pwd = connexion.password.value;
+            var a = "@";
+            //var pt = ".";
+
+
+            if (email.length === 0 || pwd.length === 0) {
+                alert("Vérifier votre login et votre de mot de passe");
+                return false;
+            }
+            //return false est utilisé pour empêcher la soumission du formulaire.
+            else {
+                if (pwd.length < 8 || pwd.length > 8) {
+                    alert("Votre mot de passe doit avoir une longueur égale à 8 caractères");
+                    return false;
+                }
+                //La méthode substring() renvoie la partie de l' string index de début jusqu'à l'index de fin exclu.
+                //La méthode indexOf() renvoie le premier indice pour lequel on trouve un élément donné. 
+
+                if (email.substring(email.indexOf(a)) != '@gmail.com') {
+                    alert("Votre email doit etre fini par @gmail.com");
+                    return false;
+                } else {
+                    var familyname = email.substring(0, email.indexOf(a));
+                    alert('Bienvenue ' + familyname);
+                }
+            }
+
+
+
+
+
+        }
+    </script>
+   <footer>
+    <p>&copy; 2023 Société Tunisienne d'Électricité et du gaz</p>
+</footer>   
+
+</html>
+ 

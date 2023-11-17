@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+<fieldset>
+    <div class="legend-box" justify-content="center" align-items="center">
+        <legend>Login</legend>
+    </div>
+
+    <div class="login-form"> <!-- Ajout de la classe "login-form" -->
+        <div class="sign-in-htm">
+            <div class="group">
+                <form name="connexion" action="loginRs.php" method="post" onsubmit="return test() ">
+                    <br>
+                    <br>
+                    <div class="legend-box">
+                        <label for="user" class="label">Email</label>
+                    </div>
+                    <input id="email" type="email" class="input" name="emailRs" placeholder="SVP entrez votre email ! !" required>
+                    <br>
+                </div>
+                <div class="group"><br>
+                    <br>
+                    <div class="legend-box">
+                        <label for="password" class="label">Password</label>
+                    </div>
+                    <input id="password" type="password" class="input" data-type="password" name="passwordRs" placeholder="SVP entrez votre mot de passe ! !" required>
+                    <br>
+                    <br>
+                </div>
+
+                <input type="submit" class="button" value="Login"> <br>
+                
+                <button class="button"><a href="registration_responsable.html">not registred</a></button>
+                
+                <!-- Ajout de la classe "button" -->
+
+            </form>
+        </div>
+    </div>
+</fieldset>
+
+
+    <script>
+        function test() {
+            var login = document.forms["connexion"]["emailRs"].value;
+            var pwd = document.forms["connexion"]["passwordRs"].value;
+            var a = "@";
+            
+
+            if (login.length === 0 || pwd.length === 0) {
+                alert("Vérifier votre login et votre de mot de passe");
+                return false;
+            }
+            else {
+                if (pwd.length < 8 ) {
+                    alert("Votre mot de passe doit avoir une longueur superieur à 8 caractères");
+                    return false;
+                }
+
+                if (login.substring(login.indexOf(a)) != '@gmail.com') {
+                    alert(" verifier votre email  ");
+                    return false;
+                }  
+
+            }
+			return true;
+        }
+    </script>
+
+</body>
+<footer>
+    <p>&copy; 2023 Société Tunisienne d'Électricité et du gaz</p>
+</footer>
+</html>
+

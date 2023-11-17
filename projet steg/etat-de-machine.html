@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi de l'État des Machines</title>
+    <link rel="stylesheet" href="css/aff.css"> <!-- Ajoutez un fichier CSS pour styliser votre formulaire -->
+</head>
+<body>
+    <main>
+        <legend> <section id="suivi-etat-machine"></legend>
+            <fieldset>  <h1>Suivi de l'État des Machines</h1>
+            <form>
+                <label for="nom-equipement">Nom de l'Équipement :</label>
+                <input type="text" id="nom-equipement" name="nom-equipement" required> <br>
+                <br>
+                <label for="etat-machine">ID de la Machine :</label>
+                <input type="text" id="etat-machine" name="etat-machine" readonly>
+                
+                <button type="submit">Vérifier l'État</button>
+            </form>
+        </section>
+    </main>
+    </fieldset>
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+<footer>
+    <p>&copy; 2023 Société Tunisienne d'Électricité et du gaz</p>
+</footer>
+</html>

@@ -1,0 +1,101 @@
+* Body styles */
+/* Style du corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Utilisation de la hauteur minimale de la fenêtre visible */
+}
+
+
+/* Container styles */
+#container_1 {
+  background-color: #007bff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  max-width: 500px;
+}
+
+#container_1:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+#container_2 {
+  background-color: #fff;
+  padding: 2em;
+  margin-top: 1em;
+  border: 1px solid #ccc;
+}
+
+/* Title styles */
+#title {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* Form styles */
+.form {
+  padding: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+
+/* Label styles */
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/* Select styles */
+select {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Radio button styles */
+input[type="radio"] {
+  margin-right: 1em;
+}
+
+/* Textarea styles */
+textarea {
+  width: 100%;
+  height: 8em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* Submit button styles */
+#submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #4f5d75;
+}
+#title {
+  color: #ffffff;
+}
+/* Style du contenu principal (y compris le diaporama) */
+main {
+  flex-grow: 1; /* Permet au contenu de prendre autant de place que nécessaire */
+  padding: 20px;
+}
+
+/* Style du pied de page */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}

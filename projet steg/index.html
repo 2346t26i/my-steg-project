@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="css/st.css"> <!-- Ajoutez un fichier CSS pour styliser votre tableau de bord -->
+</head>
+<body>
+    <header> 
+        <img src="img/lsteg.png" alt="Logo de la société">
+        <h1>Société Tunisienne d'Électricité  et du gaz  hier , aujourd'hui & demain </h1>
+    </header>
+    <nav>
+        <ul>
+            
+            <li><a href="loginA.html">Espace agent</a></li>
+            <li><a href="loginR.html">Espace reparateur</a></li>
+            <li><a href="loginRs.html">Espace responsable</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <div class="slideshow">
+            <img src="img/photo1.jpg" alt="Image 1" style="width: 100%;">
+            <img src="img/photo2.jpg" alt="Image 2" style="width: 100%;">
+            <img src="img/photo3.jpg" alt="Image 3" style="width: 100%;">
+            <!-- Ajoutez autant d'images que vous le souhaitez -->
+        </div>
+    </main>
+    
+    
+    <script>
+        const images = document.querySelectorAll('.slideshow img');
+        let currentIndex = 0;
+    
+        function changeImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+    
+        setInterval(changeImage, 3000); // Change l'image toutes les 3 secondes (ajustez la durée selon vos besoins)
+    </script>
+    
+</body>
+<footer>
+    <p>&copy; 2023 Société Tunisienne d'Électricité  et du gaz</p>
+</footer>
+</html>
+
+
+
+

@@ -1,0 +1,80 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body, h2, table, th, td, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+/* Style du corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+/* Style de la section "Disponibilité des Réparateurs" */
+#disponibilite-reparateurs {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style du titre "Disponibilité des Réparateurs" */
+#disponibilite-reparateurs h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style de la table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Style de l'en-tête de la table */
+table th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style des cellules de la table */
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style des boutons dans la table */
+table button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Style des boutons au survol */
+table button:hover {
+    background-color: #0056b3;
+}
+/* Style du contenu principal (y compris le diaporama) */
+main {
+    flex-grow: 1; /* Permet au contenu de prendre autant de place que nécessaire */
+    padding: 20px;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

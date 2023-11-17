@@ -1,0 +1,89 @@
+/* Style général */
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilisation de la hauteur minimale de la fenêtre visible */
+}
+  
+  /* Style de la boîte de connexion */
+  fieldset {
+	margin: 0 auto;
+	width: 400px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  legend {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+  }
+  
+  .login-form {
+	padding: 20px;
+  }
+  
+  .group {
+	margin-bottom: 20px;
+  }
+  
+  /* Style des champs de saisie */
+  .label {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #333;
+  }
+  
+  .input {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+  }
+  
+  /* Style du bouton de connexion */
+  .button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-sizing: border-box;
+  }
+  
+  /* Style des messages d'erreur */
+  .error-message {
+	color: #f00;
+	font-size: 14px;
+	margin-top: 5px;
+  }
+/* Style du contenu principal (y compris le diaporama) */
+main {
+    flex-grow: 1; /* Permet au contenu de prendre autant de place que nécessaire */
+    padding: 20px;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

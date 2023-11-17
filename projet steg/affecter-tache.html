@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/aff.css">
+</head>
+<body>
+  
+<section id="affectation-tache">
+        <h2>Affectation de Tache</h2>
+        <form>
+            <label for="id-reparateur">Selectionner un Réparateur :</label>
+            <select id="id-reparateur" name="id-reparateur" required> 
+                <option value="reparateur1">Reparateur 1</option>
+                <option value="reparateur2">Reparateur 2</option> 
+                <!-- ... autres réparateurs ... -->
+            </select> <br>
+            
+            <label for="id-panne">ID de la Panne :</label>
+            <input type="text" id="id-panne" name="id-panne" required> <br>
+            
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required> <br>
+            
+            <label for="description">Description de la Tâche :</label> 
+            <textarea id="description" name="description" rows="4" required></textarea><br>
+            
+            <button type="submit">Affecter la Tache</button><br>
+        </form>
+ </section>
+ </body>
+ <footer>
+    <p>&copy; 2023 Société Tunisienne d'Électricité et du gaz</p>
+</footer>
+</html>
+    
+

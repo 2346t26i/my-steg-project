@@ -1,0 +1,85 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body, h2, form, label, select, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilisation de la hauteur minimale de la fenêtre visible */
+}
+
+
+/* Style de la section "Affectation de Tâche" */
+#affectation-tache {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Pour centrer le contenu */
+}
+
+/* Style du titre "Affectation de Tâche" */
+#affectation-tache h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Augmentez l'espacement en bas du titre */
+}
+
+/* Style du formulaire */
+form {
+    width: 100%;
+    max-width: 400px; /* Ajustez la largeur selon vos besoins */
+    margin: 0 auto;
+}
+
+/* Style des étiquettes du formulaire */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style des éléments de formulaire */
+select, input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Style du bouton du formulaire */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Agrandissez le bouton */
+    cursor: pointer;
+    font-size: 18px; /* Agrandissez la police du bouton */
+}
+
+/* Style du bouton au survol */
+button:hover {
+    background-color: #0056b3;
+}
+/* Style du contenu principal (y compris le diaporama) */
+main {
+    flex-grow: 1; /* Permet au contenu de prendre autant de place que nécessaire */
+    padding: 20px;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
